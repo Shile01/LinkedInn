@@ -63,7 +63,7 @@ a {
   font-weight: 400;
   font-size: 1.5rem;
   display: inline-block;
-  margin-right: 3px;
+  margin-right: 6px;
 }
 
 .logo_design {
@@ -73,19 +73,28 @@ a {
   background: #186ebe;
   color: #fff;
   border-radius: 5px;
+  align-self: center;
+  justify-self: center;
 }
 
 .logo-search {
-  display: inline-block;
+  width: 85%;
 }
 
 .logo-search input[type="search"] {
   padding: 3px;
-  position: relative;
-  top: -4px;
   background: #e1e9ee;
   border: 1px solid white;
+  width: 100%;
 }
+
+.header_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
 .nav__list {
   display: flex;
   align-items: center;
@@ -109,15 +118,19 @@ a {
   /* border: 1px solid; */
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 670px) {
   .container {
     width: 90%;
     margin: 0 auto;
   }
 
-  .header_content,
   .navigations {
     width: 100%;
+  }
+
+  .nav__list {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .main {
@@ -385,15 +398,21 @@ a {
 
   .header_content {
     display: flex;
+    margin: 0;
+  }
+
+  .logo {
+    margin-right: 4px !important;
   }
 
   .logo-search input[type="search"] {
     padding: 3px;
-    position: relative;
-    top: 5px;
     background: #e1e9ee;
     border: 1px solid white;
-    align-self: center;
+  }
+
+  .logo-search {
+    width: 90%;
   }
 
   .main {
@@ -720,6 +739,7 @@ a {
     position: relative;
   }
 }
+
 @media screen and (min-width: 900px) {
   .btn {
     top: 40px;
@@ -1184,23 +1204,39 @@ a {
   .btn {
     position: absolute;
     display: inline-block;
-    left: 20%;
-    right: 20%;
+    left: 25%;
+    right: 25%;
     top: 70px !important;
     opacity: 0;
     background: #186ebe;
     color: #fff;
     padding: 6px 12px !important;
-    font-size: 14px;0
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1500px) {
   .btn {
     position: absolute;
     display: inline-block;
+    left: 30% !important;
+    right: 30% !important;
+    top: 55px !important;
+    opacity: 0;
+    background: #186ebe;
+    color: #fff;
+    padding: 6px 12px !important;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .btn {
+    position: absolute;
+    display: inline-block;
     left: 20%;
     right: 20%;
-    top: 63px !important;
+    top: 45px !important;
     opacity: 0;
     background: #186ebe;
     color: #fff;
