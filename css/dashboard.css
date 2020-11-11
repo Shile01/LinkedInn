@@ -31,7 +31,13 @@ select {
   background: transparent;
   color: #fff;
   font-size: 11px;
-  padding: none;
+  padding: 0;
+  margin: 0;
+}
+
+option {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -77,10 +83,6 @@ a {
   justify-self: center;
 }
 
-.logo-search {
-  width: 85%;
-}
-
 .logo-search input[type="search"] {
   padding: 3px;
   background: #e1e9ee;
@@ -122,6 +124,10 @@ a {
   .container {
     width: 90%;
     margin: 0 auto;
+  }
+
+  .logo-search {
+    width: 85%;
   }
 
   .navigations {
@@ -396,9 +402,14 @@ a {
     justify-content: space-between;
   }
 
-  .header_content {
+  .head_content {
     display: flex;
     margin: 0;
+    justify-content: space-between;
+  }
+
+  .header_content {
+    margin: 0 !important;
   }
 
   .logo {
@@ -409,6 +420,7 @@ a {
     padding: 3px;
     background: #e1e9ee;
     border: 1px solid white;
+    width: 100%;
   }
 
   .logo-search {
@@ -784,6 +796,11 @@ a {
   .container {
     width: 60%;
     margin: 0 auto;
+  }
+
+  .head_content {
+    display: flex !important;
+    flex-direction: row;
   }
 
   .card-section {
